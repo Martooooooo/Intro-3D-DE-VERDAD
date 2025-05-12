@@ -221,8 +221,9 @@ GameObject:
   m_Component:
   - component: {fileID: 153925491}
   - component: {fileID: 153925490}
+  - component: {fileID: 153925492}
   m_Layer: 0
-  m_Name: INSTANTIATOR
+  m_Name: RandomCLoner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -256,6 +257,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &153925492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153925489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcda0ab05f4031e4e993d17e815a7176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab1: {fileID: 2732797207483938010, guid: 7a7efa5c180fea8488a4ba58be8a621f, type: 3}
+  prefab2: {fileID: 7951091657725806654, guid: d46107810221f764c854b49a783bbf58, type: 3}
+  prefab3: {fileID: 8319447520630826953, guid: fd6dda020d348874cbb118187ddbd25a, type: 3}
+  randomNumber: 0
+  min: 0
+  max: 2
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0.73, y: 3.98, z: -1.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -578,8 +597,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 153925490}
-        m_MethodName: Clonarcubo
+      - m_Target: {fileID: 153925492}
+        m_MethodName: CloneRandom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
